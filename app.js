@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const mongoDB = "mongodb://localhost:27017/testdb";
+const mongoDB = process.env.MONGO_URL;
 mongoose.connect(mongoDB);
 mongoose.Promise = Promise;
 

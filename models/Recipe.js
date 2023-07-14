@@ -9,4 +9,4 @@ let recipeSchema = new Schema({
     images: [Schema.Types.ObjectId]
 });
 
-module.exports = mongoose.model("Recipe", recipeSchema, "Recipes");
+module.exports = mongoose.model("Recipe", recipeSchema, "recipes");
