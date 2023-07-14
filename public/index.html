@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Recipes</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+  <script src="./javascripts/index.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Recipes</a>
+        <div class="input-field right white">
+          <input id="search-bar" type="search" placeholder="Search" required>
+          <i class="material-icons">close</i>
+        </div>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col">
+      <h2 id="recipe-name"></h2>
+      <h3>Instructions</h3>
+      <ul id="instructions-list"></ul>
+      <h3>Ingredients</h3>
+      <ul id="ingredients-list"></ul>
+      <h3>Special categories</h3>
+      <ul id="special-list"></ul>
+      <di id="images"></di>
+    </div>
+
+    <div class="col">  
+      <h2>Add recipe</h2>
+      <label>Name
+        <input type="text" id="name-text">
+      </label>
+      <h4>Ingredients</h4>
+        <textarea id="ingredients-text"></textarea>
+        <p>
+          <button class="btn" id="add-ingredient" type="button">Add ingredient</button>
+        </p>  
+          <h4>instructions</h4>
+        <textarea id="instructions-text"></textarea>
+        <p>
+          <button class="btn" id="add-instruction" type="button">Add instruction</button>
+        </p>
+        
+      <label>Add images
+        <p>  
+          <input type="file" multiple id="image-input" accept="image/png, image/gif, image/jpeg">
+        </p>  
+      </label>
+      <label>Food category
+        <fieldset id="category-container">
+        </fieldset>
+      </label>
+      <p>
+        <button class="btn" id="submit" type="submit">Submit</button>
+      </p>
+    </div>  
+  </div>  
+</body>
+
+</html>
